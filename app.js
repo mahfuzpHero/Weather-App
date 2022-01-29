@@ -14,7 +14,7 @@ const setInnerText = (id, Text) => {
 
 const displayData = temperature => {
     setInnerText("city",temperature.name);
-    setInnerText("temperature",temperature.main.temp);
+    setInnerText("temperature",temperature.main.temp + "°C");
     setInnerText("humidity",'Humidity :' + ' ' +temperature.main.humidity+'%');
     setInnerText("condition",temperature.weather[0].main);
     setInnerText("wind", 'Wind - speed :' + ' ' + temperature.wind.speed + ' ' + 'km/h' );
